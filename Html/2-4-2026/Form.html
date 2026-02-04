@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">FullName*:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Please enter name.."
+          required
+          value="Hello Html"
+        />
+      </div>
+      <div>
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="password">Password*:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+      </div>
+      <div>
+        <label for="bio">Bio:</label><br />
+        <textarea id="bio" name="bio" rows="4" cols="20"> </textarea>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
