@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Select Options Example</h1>
+    <select name="fruits" id="fruits">
+      <option value="">--Please choose an option--</option>
+      <option value="apple1">Apple</option>
+      <option value="banana1">Banana</option>
+      <option value="cherry" selected>Cherry</option>
+      <option value="date">Date</option>
+      <option value="elderberry">Elderberry</option>
+    </select>
+    <h1>Select Multipule Options Example</h1>
+    <select name="fruits" id="fruits" multiple>
+      <option value="">--Please choose an option--</option>
+      <option value="apple1">Apple</option>
+      <option value="banana1" selected>Banana</option>
+      <option value="cherry" selected>Cherry</option>
+      <option value="date">Date</option>
+      <option value="elderberry">Elderberry</option>
+    </select>
+    <div>
+      <h2>Auto complete example:</h2>
+      <label for="browsers">Choose your browser from the list:</label>
+      <input list="browsers" name="browser" id="browser" />
+      <datalist id="browsers">
+        <option value="Chrome" />
+        <option value="Firefox" />
+        <option value="Safari" />
+        <option value="Edge" />
+        <option value="Opera" />
+      </datalist>
+    </div>
+  </body>
+</html>
