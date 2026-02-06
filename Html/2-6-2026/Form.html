@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+        text-shadow: none;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      fieldset {
+        border: 2px solid #1c9f4c;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        background-color: #f8f9ff;
+      }
+
+      legend {
+        color: #bdc313;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: 500;
+        font-size: 0.95em;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="password"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 5px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+        font-family: inherit;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="tel"]:focus,
+      input[type="date"]:focus,
+      input[type="password"]:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #667eea;
+        background-color: #f0f4ff;
+        box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 8px;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+      }
+
+      input[type="radio"] + label,
+      input[type="checkbox"] + label {
+        display: inline;
+        margin: 0;
+        font-weight: normal;
+      }
+
+      select {
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 20px;
+        padding-right: 35px;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 12px 30px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      input[type="submit"] {
+        background-color: #667eea;
+        color: white;
+        width: 48%;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #5568d3;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      input[type="reset"] {
+        background-color: #ccc;
+        color: #333;
+        width: 48%;
+      }
+
+      input[type="reset"]:hover {
+        background-color: #bbb;
+        transform: translateY(-2px);
+      }
+
+      br {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        form {
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 1.8em;
+        }
+
+        fieldset {
+          padding: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" required />
+        <br /><br />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" required />
+        <br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+        <br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Information</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br /><br />
+
+        <label for="cpassword">Confirm Password:</label>
+        <input type="password" id="cpassword" name="cpassword" required />
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Address</legend>
+
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" />
+        <br /><br />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+        <br /><br />
+
+        <label for="state">State/Province:</label>
+        <input type="text" id="state" name="state" />
+        <br /><br />
+
+        <label for="zipcode">Zip/Postal Code:</label>
+        <input type="text" id="zipcode" name="zipcode" />
+        <br /><br />
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" />
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="other" /> Other <br /><br />
+
+        <label for="interests">Interests:</label>
+        <input type="checkbox" name="interests" value="sports" /> Sports
+        <input type="checkbox" name="interests" value="music" /> Music
+        <input type="checkbox" name="interests" value="reading" /> Reading
+        <input type="checkbox" name="interests" value="travel" /> Travel
+        <br /><br />
+
+        <label for="country_select">Select Country:</label>
+        <select id="country_select" name="country_select">
+          <option value="">-- Select Country --</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+        </select>
+        <br /><br />
+
+        <label for="message">Additional Comments:</label>
+        <br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Enter any additional information..."
+        ></textarea>
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <input type="checkbox" name="agree" required /> I agree to the Terms and
+        Conditions <br /><br />
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+      </fieldset>
+    </form>
+  </body>
+</html>

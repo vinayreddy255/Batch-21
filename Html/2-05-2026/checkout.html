@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout Form</title>
+    <style>
+      :root {
+        --panel: #b6d84b;
+        --panel-dark: #96bf2a;
+        --input-bg: #eaf3d0;
+        --accent: #34492b;
+        --white: #fff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f6f6f6;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .panel {
+        width: 360px;
+        background: linear-gradient(180deg, var(--panel) 0%, #c3e25b 100%);
+        border-radius: 8px;
+        padding: 22px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        border: 6px solid rgba(255, 255, 255, 0.15);
+      }
+      h2 {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        color: var(--accent);
+      }
+      .step {
+        margin-bottom: 14px;
+      }
+      label.step-title {
+        display: block;
+        font-weight: 700;
+        color: var(--accent);
+        margin-bottom: 8px;
+      }
+      .field {
+        background: rgba(255, 255, 255, 0.08);
+        border: 2px solid rgba(255, 255, 255, 0.35);
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .field input[type="text"],
+      .field input[type="email"],
+      .field input[type="tel"],
+      .field textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        background: var(--white);
+        font-size: 13px;
+        color: #222;
+      }
+      .field textarea {
+        min-height: 64px;
+        resize: vertical;
+      }
+      .two-col {
+        display: flex;
+        gap: 8px;
+      }
+      .two-col .col {
+        flex: 1;
+      }
+      .card-types {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .card-option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 8px;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        background: rgba(255, 255, 255, 0.92);
+        font-size: 13px;
+        color: #222;
+      }
+      .card-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 20px;
+        border-radius: 4px;
+        font-weight: 700;
+        color: #fff;
+        font-size: 11px;
+      }
+      .visa {
+        background: #1a66b3;
+      }
+      .amex {
+        background: #0b9bdc;
+      }
+      .mc {
+        background: #d96147;
+      }
+      .buy-btn {
+        display: block;
+        margin: 14px auto 0 auto;
+        padding: 10px 34px;
+        border-radius: 30px;
+        background: var(--accent);
+        color: var(--white);
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+      }
+      .buy-btn:active {
+        transform: translateY(2px);
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
+      }
+      .muted {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.55);
+      }
+      .legend {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.55);
+        margin-bottom: 6px;
+      }
+      /* small helper for radio */
+      .radio {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .radio input {
+        width: 14px;
+        height: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel" role="main">
+      <div class="step">
+        <label class="step-title">Step 1: Your details</label>
+        <div class="field">
+          <input
+            type="text"
+            placeholder="First and last name"
+            aria-label="Name"
+          />
+        </div>
+        <div class="field">
+          <input
+            type="email"
+            placeholder="example@domain.com"
+            aria-label="Email"
+          />
+        </div>
+        <div class="field">
+          <input
+            type="tel"
+            placeholder="Eg. +447500000000"
+            aria-label="Phone"
+          />
+        </div>
+      </div>
+
+      <div class="step">
+        <label class="step-title">Step 2: Delivery address</label>
+        <div class="field">
+          <textarea placeholder="Address" aria-label="Address"></textarea>
+        </div>
+        <div class="two-col">
+          <div class="col field">
+            <input type="text" placeholder="Post code" aria-label="Post code" />
+          </div>
+          <div class="col field">
+            <input type="text" placeholder="Country" aria-label="Country" />
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <label class="step-title">Step 3: Card details</label>
+        <div class="legend">Card type</div>
+        <div class="card-types" role="radiogroup" aria-label="Card type">
+          <label class="card-option radio"
+            ><input type="radio" name="card" checked />
+            <span class="card-icon visa">VISA</span> VISA</label
+          >
+          <label class="card-option radio"
+            ><input type="radio" name="card" />
+            <span class="card-icon amex">AmEx</span> AmEx</label
+          >
+          <label class="card-option radio"
+            ><input type="radio" name="card" />
+            <span class="card-icon mc">MC</span> Mastercard</label
+          >
+        </div>
+
+        <div class="field" style="margin-top: 10px">
+          <input
+            type="text"
+            placeholder="Card number"
+            aria-label="Card number"
+          />
+        </div>
+        <div class="two-col">
+          <div class="col field">
+            <input
+              type="text"
+              placeholder="Security code"
+              aria-label="Security code"
+            />
+          </div>
+          <div class="col field">
+            <input
+              type="text"
+              placeholder="Name on card"
+              aria-label="Name on card"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button class="buy-btn">BUY IT!</button>
+    </div>
+  </body>
+</html>
