@@ -1,0 +1,17 @@
+box-model
+visiblity hidden, visiblity none
+opcity
+disply(inline, block, inline-block)
+max-width
+combinationslectors(class,id)
+
+border-raidous(round-corners)
+float
+overflow
+postions
+z-index
+pseudo-class
+pseudo-elements
+flex
+grid
+media queries

@@ -1,0 +1,11 @@
+.div-cls {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin-top: 10px;
+  /* display: inline; */
+  display: inline-block;
+}
+label {
+  display: block;
+}
