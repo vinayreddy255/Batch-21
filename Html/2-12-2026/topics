@@ -8,7 +8,7 @@ combinationslectors(class,id)
 border-raidous(round-corners)
 float
 overflow
-postions
+postions(static, relative, absoulte, fixed, stickey)
 z-index
 pseudo-class
 pseudo-elements
