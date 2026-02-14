@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .pseudo-class-hover {
+        background-color: lightblue;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 20px;
+        border: 2px solid black;
+      }
+      .pseudo-class-hover:hover {
+        background-color: tomato;
+        height: 400px;
+        width: 400px;
+      }
+      input {
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      .input-foucs:focus {
+        background-color: lightgreen;
+        outline: none;
+        color: red;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+      }
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      .input-disabled:disabled {
+        background-color: rgb(43, 151, 65);
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pseudo-class-hover">React testing</div>
+    <div>
+      <input type="text" placeholder="Enter your name" class="input-foucs" />
+    </div>
+    <a href="https://mail.google.com/mail/u/3/#inbox" target="_blank"
+      >Goole link</a
+    >
+    <br />
+    <div>
+      <input
+        type="text"
+        placeholder="Enter your disabled values"
+        class="input-disabled"
+        value="disabled value"
+        disabled
+      />
+      <button disabled>Disabled button</button>
+    </div>
+  </body>
+</html>

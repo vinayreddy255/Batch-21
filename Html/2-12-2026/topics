@@ -10,8 +10,21 @@ float
 overflow
 postions(static, relative, absoulte, fixed, stickey)
 z-index
+
 pseudo-class
+  :hover
+  :focus
+  :link
+  :visted
+  :disabled
+  :nth-child
 pseudo-elements
+  ::first-line
+  ::first-latter
+  ::before
+  ::after
+  ::mark
+
 flex
 grid
 media queries
