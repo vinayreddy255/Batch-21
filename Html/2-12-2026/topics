@@ -18,6 +18,8 @@ pseudo-class
   :visted
   :disabled
   :nth-child
+  :nth-last-child
+  :first-child
 pseudo-elements
   ::first-line
   ::first-latter
