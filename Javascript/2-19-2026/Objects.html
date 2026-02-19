@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var obj = {
+      name: "John",
+      age: 30,
+      name: "vinay",
+      nam1: "vinay",
+      city: "New York",
+      isStudent: false,
+      hobbies: ["reading", "traveling", "coding"],
+      address: {
+        street: "123 Main St",
+        zipCode: "10001",
+        pins: [
+          123456,
+          654321,
+          789012,
+          { name: "ram", city: "hyd", pin: 500001 },
+          { name: "shyam", city: "Banglore", pin: 500002 },
+          { name: "mohan", city: "Chennai", pin: 500003 },
+        ],
+      },
+    };
+    var a = "city";
+    console.log(obj);
+    console.log("my name is:", obj.name);
+    console.log("my age is:", obj.age);
+    console.log("my city is:", obj[a]); // obj['city']
+    console.log("my address is:", obj.address.street);
+    console.log("my hobbies are:", obj.hobbies[1]);
+    console.log("my pins are:", obj.address.pins[2]);
+    console.log("my pins are:", obj.address.pins[4].city);
+  </script>
+</html>

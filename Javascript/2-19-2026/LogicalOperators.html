@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // logical operators
+    // &&, ||, !
+    var a = 10;
+    var b = 20;
+    var c = 30;
+    console.log("a > b && a < c:", a > b && a < c); // flase
+    console.log("a < b && a < c:", a < b && a < c && b === 50); // true && ture && false = false
+    console.log("a < b || a > c:", a < b || a > c); // tue || false = true
+    console.log("a < b || a > c:", a < b || a > c || a === 10); // true || false || true = true
+    console.log("a < b || a > c:", a > b || a > c || a !== 10); // false || false || false = false
+    console.log(a <= 10 || (a == 20 && a < b)); //true || (false && true) true || false = false
+  </script>
+</html>
