@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Html arthementic operator</h1>
+<div id="calculation"></div>
+</body>
+<script>
+    function arthmeticOperations(a,b, id){
+        var result = 0;
+        if(id ==='+'){
+            result = a+b;
+        } else if(id ==='-'){
+            result = a-b;
+        } else if(id ==="*"){
+            result = a*b;
+        } 
+        return result;
+        
+    }
+    var r = '<h2>Addition:'+arthmeticOperations(10,20,'+')+'Multiplcation:'+arthmeticOperations(10,20,'*')+'</h2>';
+    document.getElementById("calculation").innerHTML = r;
+
+//Addition:20
+    
+</script>
+</html>
