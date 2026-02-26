@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">JsEventAction</button><br /><br />
+    <button id="btn1">JsEventAction</button><br /><br />
+    <div>
+      <p id="output"></p>
+    </div>
+  </body>
+  <script>
+    // const button = document.querySelector("button");
+    // console.log(button);
+
+    document.getElementById("btn").addEventListener("click", function () {
+      alert("Button clicked!");
+    });
+
+    document
+      .getElementById("output")
+      .addEventListener("mouseover", function () {
+        document.getElementById("output").innerHTML =
+          "<strong>You hovered over the paragraph!</strong>";
+      });
+
+    document
+      .getElementById("output")
+      .addEventListener("mouseleave", function () {
+        document.getElementById("output").innerHTML = "";
+      });
+  </script>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="clickAction()">Click me!</button>
+    <div>
+      <p
+        id="output"
+        onmouseover="hoverAction()"
+        onmouseleave="mouseLeaveAction()"
+      ></p>
+    </div>
+  </body>
+  <script>
+    function clickAction() {
+      alert("Hello, World!");
+    }
+    function hoverAction() {
+      // alert("You hovered over the paragraph!");
+      // document.getElementById("output").textContent = "You hovered over the paragraph!";
+      document.getElementById("output").innerHTML =
+        "<strong>You hovered over the paragraph!</strong>";
+    }
+    function mouseLeaveAction() {
+      document.getElementById("output").innerHTML = "";
+    }
+  </script>
+
+  <!-- const button = document.querySelector("button");
+    button.addEventListener("click", function() {
+      alert("Button clicked!");
+    }); -->
+</html>

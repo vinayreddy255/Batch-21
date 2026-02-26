@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>userName*:<input type="text" id="userInput" /></div>
+      <div>City*:<input type="text" id="cityInput" /></div>
+      <button onclick="submitAction()">Submit</button>
+    </div>
+  </body>
+  <script>
+    function submitAction() {
+      var userName = document.getElementById("userInput").value;
+      var city = document.getElementById("cityInput").value;
+      if (userName === "") {
+        alert("Please enter your name.");
+        return;
+      } else {
+        alert("Hello, " + userName + "!");
+      }
+      if (city === "") {
+        alert("Please enter your city.");
+        return;
+      } else {
+        alert("You are from " + city + ".");
+      }
+    }
+    // const input = document.querySelector("input");
+    // const button = document.querySelector("button");
+
+    // button.addEventListener("click", function () {
+    //   alert("You entered: " + input.value);
+    // });
+  </script>
+</html>
