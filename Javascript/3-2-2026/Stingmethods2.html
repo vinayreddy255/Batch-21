@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="slice"></h2>
+    <h2 id="replace"></h2>
+    <h2 id="replaceAll"></h2>
+    <h2 id="split"></h2>
+    <h2 id="trim"></h2>
+    <h2 id="charAt"></h2>
+    <h2 id="concat"></h2>
+    <h2 id="substr"></h2>
+    <h2 id="repeat"></h2>
+    <h2 id="padStart"></h2>
+    <h2 id="padEnd"></h2>
+  </body>
+  <script>
+    //slice, replace, split, trim, charAt, concat, repeat, padStart, padEnd, substring, substr, match,
+    var str = "Hello world! React is awesome. World";
+    var strTrim = "   Hello    ";
+    document.getElementById("slice").innerHTML =
+      "Slice of the string is: " + str.slice(1);
+    document.getElementById("replace").innerHTML =
+      "Replace of the string is: " + str.replace("World", "JavaScript");
+    document.getElementById("replaceAll").innerHTML =
+      "Replace All of the string is: " + str.replaceAll("World", "JavaScript");
+    var s = str.split(" ");
+    console.log(s);
+    console.log("wotout trime>>>", strTrim); //12
+    console.log("trime>>", strTrim.trim()); //5
+    document.getElementById("charAt").innerHTML =
+      "Character at index 6 is: " + str.charAt(4);
+    console.log(str.charAt(str.indexOf("w")).toUpperCase()); // Output: "W"
+    document.getElementById("concat").innerHTML =
+      "Concatenated string is: " + str.concat(" How are you?");
+    document.getElementById("substr").innerHTML =
+      "Substring from index 7 with length 5 is: " + str.substr(7, 5);
+    document.getElementById("repeat").innerHTML =
+      "Repeated string is: " + str.repeat(3);
+    document.getElementById("padStart").innerHTML = "" + str.padStart(50, "$");
+    document.getElementById("padEnd").innerHTML = "" + str.padEnd(50, "*");
+    // Output: ["Hello", "World!", "React", "is" ,"awesome.", "World"]
+    // console.log(str.slice(0, 5)); // Output: "Hello"
+    // console.log(str.replace("World", "JavaScript")); // Output: "Hello, JavaScript!"
+    // console.log(str.split(", ")); // Output: ["Hello", "World!"]
+    // console.log(str.trim()); // Output: "Hello, World!"
+    // console.log(str.charAt(0)); // Output: "H"
+    // console.log(str.concat(" How are you?")); // Output: "Hello, World! How are you?"
+    // console.log(str.startsWith("Hello")); // Output: true
+    // console.log(str.endsWith("!")); // Output: true
+    // console.log(str.repeat(2)); // Output: "Hello, World!Hello, World!"
+    // console.log(str.padStart(20, "*")); // Output: "*******Hello, World!"
+    // console.log(str.padEnd(20, "*")); // Output: "Hello, World!*******"
+    // console.log(str.substring(0, 5)); // Output: "Hello"
+    // console.log(str.substr(7, 5)); // Output: "World"
+    // console.log(str.match(/o/g)); // Output: ["o", "o"]
+    // console.log(str.search("World")); // Output: 7
+    // console.log(str.localeCompare("Hello, World!")); // Output: 0
+    // console.log(str.valueOf()); // Output: "Hello, World!"
+  </script>
+</html>

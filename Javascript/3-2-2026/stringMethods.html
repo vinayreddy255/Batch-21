@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="length"></h2>
+    <h2 id="upper"></h2>
+    <h2 id="lower"></h2>
+    <h2 id="includes"></h2>
+    <h2 id="indexOf"></h2>
+    <h2 id="lastIndexOf"></h2>
+  </body>
+  <script>
+    // length, toUpperCase, toLowerCase, includes, indexOf, lastIndexOf,
+    var str = "Hello, World! React is awesome.W";
+    console.log(str.length); // Output: 13
+    document.getElementById("length").innerHTML =
+      "Length of the string is: " + str.length;
+    document.getElementById("upper").innerHTML =
+      "Uppercase of the string is: " + str.toUpperCase();
+    document.getElementById("lower").innerHTML =
+      "Lowercase of the string is: " + str.toLowerCase();
+    document.getElementById("includes").innerHTML =
+      "Does the string include 'React'? " + str.includes("react");
+    document.getElementById("indexOf").innerHTML =
+      "Index of 'W' in the string is: " + str.indexOf("W");
+    document.getElementById("lastIndexOf").innerHTML =
+      "Last index of 'W' in the string is: " + str.lastIndexOf("W");
+    // console.log(str.toUpperCase()); // Output: "HELLO, WORLD!"
+    // console.log(str.toLowerCase()); // Output: "hello, world!"
+    // console.log(str.includes("World")); // Output: true
+    // console.log(str.indexOf("o")); // Output: 4
+    // console.log(str.slice(0, 5)); // Output: "Hello"
+    // console.log(str.replace("World", "JavaScript")); // Output: "Hello, JavaScript!"
+    // console.log(str.split(", ")); // Output: ["Hello", "World!"]
+    // console.log(str.trim()); // Output: "Hello, World!"
+    // console.log(str.charAt(0)); // Output: "H"
+    // console.log(str.concat(" How are you?")); // Output: "Hello, World! How are you?"
+    // console.log(str.startsWith("Hello")); // Output: true
+    // console.log(str.endsWith("!")); // Output: true
+    // console.log(str.repeat(2)); // Output: "Hello, World!Hello, World!"
+    // console.log(str.padStart(20, "*")); // Output: "*******Hello, World!"
+    // console.log(str.padEnd(20, "*")); // Output: "Hello, World!*******"
+    // console.log(str.substring(0, 5)); // Output: "Hello"
+    // console.log(str.substr(7, 5)); // Output: "World"
+    // console.log(str.match(/o/g)); // Output: ["o", "o"]
+    // console.log(str.search("World")); // Output: 7
+    // console.log(str.localeCompare("Hello, World!")); // Output: 0
+    // console.log(str.valueOf()); // Output: "Hello, World!"
+  </script>
+</html>
