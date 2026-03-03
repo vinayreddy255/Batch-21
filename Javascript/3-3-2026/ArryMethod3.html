@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // Array Methods
+    // indexOf() - returns the first index at which a given element can be found in the array, or -1 if it is not present.
+    var arr = ["apple", "banana", "cherry", "date", 1, 2, 3, 4, 5];
+    console.log(arr.indexOf("banana")); // 1
+    console.log(arr.indexOf(4)); // 1
+    console.log(arr.indexOf("grape")); // -1
+    // lastIndexOf() - returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+    var arr1 = ["apple", "banana", "cherry", "date", "banana", 1, 2, 3, 4, 5];
+    console.log(arr1.lastIndexOf("banana")); // 4
+    // includes() - determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+    var arr2 = ["apple", "banana", "cherry", "date", 1, 2, 3, 4, 5];
+    console.log(arr2.includes("cherry")); // true
+    console.log(arr2.includes(6)); // false
+    //length - returns the number of elements in an array.
+    var arr3 = ["apple", "banana", "cherry", "date", 1, 2, 3, 4, 5];
+    console.log(arr3.length); // 9
+    // isArray() - determines whether the passed value is an Array.
+    console.log(Array.isArray(arr3)); // true
+    var str = "hello";
+    console.log(Array.isArray(str));
+    // concat() - is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+    var a1 = [1, 2, 3];
+    var a2 = [4, 5, 6];
+    var a3 = [7, 8, 9];
+    var a4 = [].concat(a1, a2, a3);
+    console.log(a4); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    // join() - creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+    var arr4 = ["apple", "banana", "cherry"];
+    console.log(arr4.join()); // apple,banana,cherry
+    console.log(arr4.join(" ")); // apple banana cherry
+    console.log(arr4.join("**")); // apple banana cherry
+  </script>
+</html>
