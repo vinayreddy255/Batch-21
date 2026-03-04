@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var arrobj = [
+      { name: "John", age: 30, city: "New York", pin: 12345 },
+      { name: "Jane", age: 25, city: "Los Angeles", pin: 67890 },
+      { name: "Jim", age: 35, city: "Chicago", pin: 54321 },
+      { name: "Jack", age: 28, city: "Houston", pin: 98765 },
+      { name: "Jill", age: 32, city: "Phoenix", pin: 45678 },
+    ];
+    var result = arrobj
+      .filter(function (el) {
+        return el.age > 30;
+      })
+      .map(function (el) {
+        return el.name;
+      });
+    console.log(result);
+    // console.log(names);
+    // ouput: [jim, jill]
+    // [{name: "Jim", age: 35, city: "Chicago", pin: 54321}, {name: "Jill", age: 32, city: "Phoenix", pin: 45678}]
+  </script>
+</html>
