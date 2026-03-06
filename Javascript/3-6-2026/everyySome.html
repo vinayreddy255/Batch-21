@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // some() - tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
+    // every() - tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+    var arr = [3, 4, 5, 6, 7, 8, 9, 10];
+
+    var result = arr.some(function (element) {
+      return element < 3;
+    });
+    console.log("some result:", result);
+
+    var result2 = arr.every(function (element) {
+      return element >= 3;
+    });
+    console.log("every result:", result2);
+  </script>
+</html>

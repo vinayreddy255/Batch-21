@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // let and const are block-scoped, meaning they are only accessible within the block they are defined in (e.g., inside a function, loop, or if statement).
+    // var is function-scoped, meaning it is accessible throughout the entire function it is defined in, regardless of block boundaries.
+
+    let name = "John";
+    {
+      let name = "Doe";
+      var age = 30;
+      console.log(name); // Output: "Doe"
+    }
+    console.log(age);
+    console.log(name);
+    let city;
+    console.log(city); // Outpz
+    const country = "USA";
+    // country = "Canada"; // This will throw an error because you cannot reassign a value to a constant variable.
+    console.log(country);
+    const obbj = { name: "Alice" };
+    obbj.name = "Bob"; // This is allowed because we are not reassigning
+    console.log(obbj);
+    obbj = { name: "Charlie" }; // This will throw an error because we are trying to reassign the constant variable obbj.
+    console.log(obbj);
+  </script>
+</html>

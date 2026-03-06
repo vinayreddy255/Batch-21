@@ -1,0 +1,15 @@
+let & const
+spred(...)
+reset(...)
+template lieral(``)
+destructuring
+arrow function
+default parameter
+for of loop
+fiter,map,reduce, forEach,some,every
+JSON.stringify(), JSON.parse()
+Object.keys(), Object.values(), Object.entries()
+setTimeout, setInterval, clearTimeout, clearInterval
+Promise, async/await
+ flatMap
+ structuredClone

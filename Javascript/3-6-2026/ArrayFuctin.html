@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //keys - returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
+    //values - returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop.
+    //entries - returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.
+    var obj = {
+      name: "John",
+      age: 30,
+      city: "New York",
+    };
+    var objKeys = Object.keys(obj);
+
+    console.log("objKeys:", objKeys);
+    var objValues = Object.values(obj);
+    console.log("objValues:", objValues);
+    var objEntries = Object.entries(obj);
+    console.log("objEntries:", objEntries);
+  </script>
+</html>
