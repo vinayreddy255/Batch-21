@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const ar = [1, 2, 3, 4, 5, "apple", "banana"];
+    const [ant, b, c, ...res] = ar;
+    console.log("ant:", ant); // 1
+    console.log("b:", b); // 2
+    console.log("c:", c); // 3
+    console.log("res:", res); // [4, 5, "apple", "banana"]
+    const obj = { name: "John", age: 30, city: "New York" };
+    const {  age, city ,name: userName} = obj;
+    console.log("userName:", userName); // John
+    // console.log("name:", name); // John
+    console.log("age:", age); // 30
+    console.log("city:", city); // New York
+  </script>
+  </script>
+</html>

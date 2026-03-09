@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    console.log("sum:", sum(2, 3, 4)); // sum: 9
+    console.log("sum:", sum(2, 3));
+    function sum(a, b, c = 10) {
+      return a + b + c;
+    }
+
+    const sumArrow = (a, b, c = 10) => a + b + c;
+    console.log("sumArrow:", sumArrow(2, 3, 4)); // sumArrow: 9
+    console.log("sumArrow:", sumArrow(2, 3)); // sumArrow: 15
+
+    const arithmetic = (a, b, s) => {
+      let result = 0;
+      if (s === "+") {
+        result = a + b;
+      } else if (s === "-") {
+        result = a - b;
+      } else if (s === "*") {
+        result = a * b;
+      } else if (s === "/") {
+        result = a / b;
+      }
+      return result;
+    };
+    console.log("arithmetic:", arithmetic(10, 5, "+")); // arithmetic: 15
+    console.log("arithmetic:", arithmetic(10, 5, "-")); // arithmetic:
+    console.log("arithmetic:", arithmetic(10, 5, "*")); // arithmetic: 50
+    console.log("arithmetic:", arithmetic(10, 5, "/")); // arithmetic:
+  </script>
+</html>

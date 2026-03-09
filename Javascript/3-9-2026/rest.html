@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function respFunc(a, b, c, ...args) {
+      console.log("a:", a);
+      console.log("b:", b);
+      console.log("c:", c);
+      console.log("args:", args);
+    }
+
+    respFunc(1, 2, 3, 4, 5, "a", "b", "Banlree", "hyderbad"); // rest operator
+  </script>
+</html>
