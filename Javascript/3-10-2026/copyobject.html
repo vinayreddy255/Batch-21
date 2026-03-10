@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const obj1 = {
+      name: "Alice",
+      age: 25,
+      city: "Los Angeles",
+      address: {
+        street: "123 Main St",
+        zip: "90001",
+      },
+    };
+    // const obj2 = { ...obj1 };
+    const obj2 = JSON.parse(JSON.stringify(obj1));
+    // console.log("obj1:", obj2);
+    obj2.name = "Bob";
+    obj2.address.zip = "560066";
+    console.log("obj1:", obj1);
+    console.log("obj2:", obj2);
+    const obj3 = structuredClone(obj1);
+    obj3.name = "Charlie";
+    obj3.address.zip = "12345";
+    console.log("obj1:", obj1);
+    console.log("obj3:", obj3);
+  </script>
+</html>

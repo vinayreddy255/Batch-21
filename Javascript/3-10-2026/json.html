@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const obj = {
+      name: "John",
+      age: 30,
+      city: "New York",
+    };
+    const str = "hello";
+    const strobj = JSON.stringify(obj);
+    const parsedObj = JSON.parse(strobj);
+    console.log(strobj); // {"name":"John","age":30,"city":"New York"}
+    console.log(parsedObj); // John
+    console.log(typeof strobj); // string
+    console.log("original object:", obj); // object
+  </script>
+</html>
