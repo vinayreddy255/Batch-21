@@ -1,0 +1,21 @@
+componets
+jsx
+binding
+props
+states
+destructring
+forms
+hooks
+forgments
+memo
+rendering
+condational renderin
+styles
+map/list/keys
+condational styles
+data passing(parent cgild, chaild to parent)
+data fetching apis
+portals
+custom hooks
+routing
+redux
