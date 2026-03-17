@@ -2,15 +2,19 @@ componets
 jsx
 binding
 props
+
 states
 destructring
+events
+rendering
+styles
+
+
 forms
-hooks
+hooks (useState, useEfect, useRef, useConext, useMemo, useCallback, useRdcer)
 forgments
 memo
-rendering
-condational renderin
-styles
+condational rendering
 map/list/keys
 condational styles
 data passing(parent cgild, chaild to parent)
