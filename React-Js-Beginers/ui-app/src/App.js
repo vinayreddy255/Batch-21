@@ -2,7 +2,8 @@ import Welcome from "./Components/3-12-2026/Welcome";
 import Header from "./Components/3-12-2026/Header";
 import HelloWorld from "./Pages/HelloWorld";
 import StateEvents from "./Components/3-17-2026/StateEvents";
-import Counter from "./Components/3-17-2026/Counter";
+import Forms from "./Components/3-18-2026/Forms";
+// import Counter from "./Components/3-17-2026/Counter";
 function App() {
   const name = "React courese, welcome to the world of React!";
   const course = "React Js";
@@ -15,7 +16,9 @@ function App() {
       <HelloWorld /> */}
       {/* 17-03-2026 */}
       {/* <StateEvents /> */}
-      <Counter name={name} course={course} instructor={instructor} />
+      {/* <Counter name={name} course={course} instructor={instructor} /> */}
+      {/* 18-03-2026 */}
+      <Forms />
     </div>
   );
 }

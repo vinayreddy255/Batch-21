@@ -3,7 +3,7 @@ function Header(params) {
     <header
       style={{
         background: "#282c34",
-        padding: "20px",
+        padding: "2px",
         color: "white",
         textAlign: "center",
       }}

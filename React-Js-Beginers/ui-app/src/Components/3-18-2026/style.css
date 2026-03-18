@@ -1,0 +1,35 @@
+.form-label {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container,
+.form-data {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-wrapper {
+  display: flex;
+}
