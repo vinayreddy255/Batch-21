@@ -9,17 +9,25 @@ events
 rendering
 styles
 
-
 forms
-hooks (useState, useEfect, useRef, useConext, useMemo, useCallback, useRdcer)
-forgments
-memo
-condational rendering
+extranalstyles
+
+
 map/list/keys
+condational rendering
 condational styles
 data passing(parent cgild, chaild to parent)
+forgments
+
+
+hooks (useState, useEfect, useRef, useConext, useMemo, useCallback, useRdcer)
+
+memo
 data fetching apis
 portals
 custom hooks
 routing
 redux
+
+parent -> chaild
+child->parent
