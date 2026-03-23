@@ -7,6 +7,9 @@ import ListsKeys from "./Components/3-20-2026/ListsKeys";
 import CondationStyle from "./Components/3-20-2026/CondationStyle";
 import Toogle from "./Components/3-20-2026/Toogle";
 import Parent from "./Components/3-20-2026/Parent";
+import Forgments from "./Components/3-23-2026/Forgments";
+import EffectComponet from "./Components/3-23-2026/EffectComponet";
+import FetchCalls from "./Components/3-23-2026/FetchCalls";
 // import Counter from "./Components/3-17-2026/Counter";
 function App() {
   const name = "React courese, welcome to the world of React!";
@@ -22,14 +25,19 @@ function App() {
       {/* <StateEvents /> */}
       {/* <Counter name={name} course={course} instructor={instructor} /> */}
       {/* 18-03-2026 */}
-      <Forms />
-        
+      {/* <Forms /> */}
+
       {/* 20-03-2026 */}
 
       {/* <ListsKeys /> */}
       {/* <CondationStyle /> */}
       {/* <Toogle /> */}
       {/* <Parent /> */}
+
+      {/* 23-03-2026 */}
+      {/* <Forgments /> */}
+      {/* <EffectComponet /> */}
+      <FetchCalls />
     </div>
   );
 }

@@ -18,6 +18,8 @@ condational rendering
 condational styles
 data passing(parent cgild, chaild to parent)
 forgments
+parent -> chaild
+child->parent
 
 
 hooks (useState, useEfect, useRef, useConext, useMemo, useCallback, useRdcer)
@@ -28,6 +30,3 @@ portals
 custom hooks
 routing
 redux
-
-parent -> chaild
-child->parent
