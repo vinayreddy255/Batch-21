@@ -10,11 +10,29 @@ import Parent from "./Components/3-20-2026/Parent";
 import Forgments from "./Components/3-23-2026/Forgments";
 import EffectComponet from "./Components/3-23-2026/EffectComponet";
 import FetchCalls from "./Components/3-23-2026/FetchCalls";
+import ComponentA from "./Components/3-4-2026/ComponentA";
+import ComponentB from "./Components/3-4-2026/ComponentB";
+import ComponentC from "./Components/3-4-2026/ComponentC";
+import ComponentD from "./Components/3-4-2026/ComponentD";
+import { MyContext } from "./Components/3-4-2026/MyContext";
 // import Counter from "./Components/3-17-2026/Counter";
 function App() {
   const name = "React courese, welcome to the world of React!";
   const course = "React Js";
   const instructor = "John Doe";
+  const data = {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",
+    phone: "1-770-736-8031 x56442",
+    website: "hildegard.org",
+    company: {
+      name: "Romaguera-Crona",
+      catchPhrase: "Multi-layered client-server neural-net",
+      bs: "harness real-time e-markets",
+    },
+  };
   return (
     <div className="App">
       {/* <h1>{name}</h1> */}
@@ -37,7 +55,18 @@ function App() {
       {/* 23-03-2026 */}
       {/* <Forgments /> */}
       {/* <EffectComponet /> */}
-      <FetchCalls />
+      {/* <FetchCalls /> */}
+
+      {/* 24-03-2026 */}
+      {/* <MyContext.Provider value={data}>
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+        <ComponentD />
+      </MyContext.Provider> */}
+      <MyContext.Provider value={data}>
+        <ComponentA />
+      </MyContext.Provider>
     </div>
   );
 }
