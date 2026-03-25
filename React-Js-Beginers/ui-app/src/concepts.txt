@@ -26,7 +26,7 @@ hooks (useState, useEfect, useRef, useConext, useMemo, useCallback, useRdcer)
 
 memo
 data fetching apis
-portals
+
 custom hooks
 routing
 redux

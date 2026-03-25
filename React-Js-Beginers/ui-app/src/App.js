@@ -15,6 +15,9 @@ import ComponentB from "./Components/3-4-2026/ComponentB";
 import ComponentC from "./Components/3-4-2026/ComponentC";
 import ComponentD from "./Components/3-4-2026/ComponentD";
 import { MyContext } from "./Components/3-4-2026/MyContext";
+import MemoComponent from "./Components/3-25-2026/MemoComponent";
+import MemoFunction from "./Components/3-25-2026/MemoFunction";
+import RefHook from "./Components/3-25-2026/RefHook";
 // import Counter from "./Components/3-17-2026/Counter";
 function App() {
   const name = "React courese, welcome to the world of React!";
@@ -64,9 +67,14 @@ function App() {
         <ComponentC />
         <ComponentD />
       </MyContext.Provider> */}
-      <MyContext.Provider value={data}>
+      {/* <MyContext.Provider value={data}>
         <ComponentA />
-      </MyContext.Provider>
+      </MyContext.Provider> */}
+
+      {/*25-03-2026  */}
+      {/* <MemoComponent /> */}
+      {/* <MemoFunction /> */}
+      <RefHook />
     </div>
   );
 }
