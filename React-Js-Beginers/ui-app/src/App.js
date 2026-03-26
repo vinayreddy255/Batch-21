@@ -19,6 +19,12 @@ import MemoComponent from "./Components/3-25-2026/MemoComponent";
 import MemoFunction from "./Components/3-25-2026/MemoFunction";
 import RefHook from "./Components/3-25-2026/RefHook";
 // import Counter from "./Components/3-17-2026/Counter";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/3-26-2026/Home";
+import ContactUs from "./Components/3-26-2026/ContactUs";
+import Users from "./Components/3-26-2026/Users";
+import About from "./Components/3-26-2026/About";
+
 function App() {
   const name = "React courese, welcome to the world of React!";
   const course = "React Js";
@@ -38,43 +44,51 @@ function App() {
   };
   return (
     <div className="App">
-      {/* <h1>{name}</h1> */}
-      <Header />
-      {/* <Welcome courseName={name} />
+      <BrowserRouter>
+        {/* <h1>{name}</h1> */}
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/users" element={<Users />} />
+        </Routes>
+        {/* <Welcome courseName={name} />
       <HelloWorld /> */}
-      {/* 17-03-2026 */}
-      {/* <StateEvents /> */}
-      {/* <Counter name={name} course={course} instructor={instructor} /> */}
-      {/* 18-03-2026 */}
-      {/* <Forms /> */}
+        {/* 17-03-2026 */}
+        {/* <StateEvents /> */}
+        {/* <Counter name={name} course={course} instructor={instructor} /> */}
+        {/* 18-03-2026 */}
+        {/* <Forms /> */}
 
-      {/* 20-03-2026 */}
+        {/* 20-03-2026 */}
 
-      {/* <ListsKeys /> */}
-      {/* <CondationStyle /> */}
-      {/* <Toogle /> */}
-      {/* <Parent /> */}
+        {/* <ListsKeys /> */}
+        {/* <CondationStyle /> */}
+        {/* <Toogle /> */}
+        {/* <Parent /> */}
 
-      {/* 23-03-2026 */}
-      {/* <Forgments /> */}
-      {/* <EffectComponet /> */}
-      {/* <FetchCalls /> */}
+        {/* 23-03-2026 */}
+        {/* <Forgments /> */}
+        {/* <EffectComponet /> */}
+        {/* <FetchCalls /> */}
 
-      {/* 24-03-2026 */}
-      {/* <MyContext.Provider value={data}>
+        {/* 24-03-2026 */}
+        {/* <MyContext.Provider value={data}>
         <ComponentA />
         <ComponentB />
         <ComponentC />
         <ComponentD />
       </MyContext.Provider> */}
-      {/* <MyContext.Provider value={data}>
+        {/* <MyContext.Provider value={data}>
         <ComponentA />
       </MyContext.Provider> */}
 
-      {/*25-03-2026  */}
-      {/* <MemoComponent /> */}
-      {/* <MemoFunction /> */}
-      <RefHook />
+        {/*25-03-2026  */}
+        {/* <MemoComponent /> */}
+        {/* <MemoFunction /> */}
+        {/* <RefHook /> */}
+      </BrowserRouter>
     </div>
   );
 }

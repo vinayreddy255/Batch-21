@@ -1,0 +1,14 @@
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+.header-menu > div {
+  margin-left: 5px;
+  padding: 5px;
+  /* border: 1px solid white; */
+  cursor: pointer;
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+}
